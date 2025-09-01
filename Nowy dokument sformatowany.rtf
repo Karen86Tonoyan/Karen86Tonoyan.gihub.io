@@ -1,0 +1,179 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset238 Calibri;}{\f2\fnil Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang21\par
+gotowa do dzia\f1\'b3ania. Nie ma potrzeby kopiowania i wklejania ka\'bfdego pliku z osobna. Powi\'b9zane pytania: Jakie s\'b9 wymagania dotycz\'b9ce plik\f0\lang1033\'f3w na GitHub Pages? Czy GitHub Pages obs\f1\'b3uguje dynamiczne strony? Jak skonfigurowa\'e6 niestandardow\'b9 domen\'ea dla GitHub Pages? Kontynuuj na czacie Automatycznie wstrzymuje si\'ea po bezczynno\'9cci\par
+stworz strone czarna glamure w szare napisy nazwa strony karen tonoyan.na stronie maja sie znajdowac cv list motywacyjny i zdjecia\par
+Sider Fusion\par
+\'8cwietnie\f2\emdash zaczniemy od planu i nast\f1\'eapnie przedstawi\'ea gotowy, dzia\'b3aj\'b9cy szablon strony GitHub Pages \f2\'84czarna glamure w szare napisy\rdblquote  z nazw\f1\'b9 strony Karen Tonoyan, zawieraj\'b9cy CV, list motywacyjny i zdj\'eacia. Nie b\'eadziemy kopiowa\'e6 pojedynczych plik\f0\'f3w r\f1\'eacznie; przygotuj\'ea strukturalny projekt, kt\f0\'f3ry \f1\'b3atwo wrzuci\'e6 na GitHub Pages.\par
+\par
+Plan dzia\'b3ania\par
+\par
+Strona: czarna/dark Glamour z szarymi napisami, nag\'b3\f0\'f3wek z nazw\f1\'b9 \f2\'84Karen Tonoyan\rdblquote .\par
+Sekcje na stronie: CV, List Motywacyjny, Galeria zdj\f1\'ea\'e6.\par
+Struktura plik\f0\'f3w: automatyczny, wszystko w jednym repozytorium, strona statyczna (bez serwera).\par
+Szablon: prosty, responsywny HTML/CSS, minimalny JavaScript tylko je\f1\'9cli przydatny do galerii.\par
+Gotowy plik index.html wraz z CSS i przyk\'b3adowymi tre\'9cciami (z miejscem na Twoje dane). Mo\'bfesz p\f0\'f3\f1\'9fniej zast\'b9pi\'e6 tre\'9cci w\'b3asnymi.\par
+Przyk\'b3adowa implementacja (pe\'b3ny, gotowy do u\'bfycia szablon)\par
+\par
+Struktura plik\f0\'f3w\par
+index.html\par
+css/style.css\par
+images/ (folder na zdj\f1\'eacia, je\'9cli chcesz umie\'9cci\'e6 lokalnie)\par
+README.md (opcjonalnie, dla opisu repozytorium)\par
+Tre\'9c\'e6 pliku index.html\par
+html\par
+<!DOCTYPE html>\par
+<html lang="pl">\par
+<head>\par
+  <meta charset="utf-8" />\par
+  <meta name="viewport" content="width=device-width, initial-scale=1" />\par
+  <title>Karen Tonoyan</title>\par
+  <link rel="stylesheet" href="css/style.css" />\par
+</head>\par
+<body>\par
+  <header class="site-header">\par
+    <h1 class="brand">Karen Tonoyan</h1>\par
+  </header>\par
+\par
+  <main class="content">\par
+    <!-- Sekcja CV -->\par
+    <section id="cv" class="section">\par
+      <h2>Curriculum Vitae</h2>\par
+      <div class="entry">\par
+        <h3>Imi\'ea i nazwisko</h3>\par
+        <p>Twoje imi\'ea i nazwisko</p>\par
+        <p><strong>Do\'9cwiadczenie:</strong> Twoje do\'9cwiadczenie zawodowe w skr\f0\'f3cie.</p>\par
+        <p><strong>Wykszta\f1\'b3cenie:</strong> Twoje wykszta\'b3cenie.</p>\par
+        <p><strong>Umiej\'eatno\'9cci:</strong> lista umiej\'eatno\'9cci kluczowych.</p>\par
+      </div>\par
+      <!-- Dodaj wi\'eacej wpis\f0\'f3w lub u\f1\'bfyj tabel/list w zale\'bfno\'9cci od potrzeb -->\par
+    </section>\par
+\par
+    <!-- Sekcja List Motywacyjny -->\par
+    <section id="motivation" class="section">\par
+      <h2>List motywacyjny</h2>\par
+      <article class="letter">\par
+        <p>Szanowni Pa\'f1stwo,</p>\par
+        <p>Tu wstaw sw\f0\'f3j list motywacyjny. Kr\'f3tko o motywacji, do\f1\'9cwiadczeniu i tym, co wniesiesz do organizacji.</p>\par
+        <p>Z powa\'bfaniem,</p>\par
+        <p>Karen Tonoyan</p>\par
+      </article>\par
+    </section>\par
+\par
+    <!-- Sekcja Galeria zdj\'ea\'e6 -->\par
+    <section id="gallery" class="section">\par
+      <h2>Zdj\'eacia</h2>\par
+      <div class="gallery-grid">\par
+        <!-- Przyk\'b3adowe zdj\'eacia; je\'9cli masz lokalne, dodaj je do images/ i odwo\'b3uj -->\par
+        <img src="images/photo1.jpg" alt="Zdj\'eacie 1" />\par
+        <img src="images/photo2.jpg" alt="Zdj\'eacie 2" />\par
+        <img src="images/photo3.jpg" alt="Zdj\'eacie 3" />\par
+      </div>\par
+    </section>\par
+  </main>\par
+\par
+  <footer class="site-footer">\par
+    <p>Wersja szablonu na GitHub Pages \f2\bullet  Temat: czarna Glamour z szarymi napisami</p>\par
+  </footer>\par
+</body>\par
+</html>\par
+Tre\f1\'9c\'e6 pliku CSS (css/style.css)\par
+css\par
+:root \{\par
+  --bg: #0a0a0a;\par
+  --card: #141414;\par
+  --text: #d9d9d9;\par
+  --muted: #9e9e9e;\par
+  --accent: #6e6e6e;\par
+\}\par
+\par
+* \{ box-sizing: border-box; \}\par
+html, body \{ margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; \}\par
+\par
+/* Og\f0\'f3lny layout */\par
+.site-header \{\par
+  text-align: center;\par
+  padding: 40px 20px;\par
+  border-bottom: 1px solid #2a2a2a;\par
+\}\par
+.brand \{\par
+  font-size: 3rem;\par
+  font-weight: 700;\par
+  letter-spacing: .5px;\par
+  color: #e0e0e0;\par
+\}\par
+.content \{\par
+  max-width: 980px;\par
+  margin: 40px auto;\par
+  padding: 0 20px;\par
+\}\par
+.section \{\par
+  margin-bottom: 48px;\par
+\}\par
+.section h2 \{\par
+  font-size: 1.75rem;\par
+  color: #d0d0d0;\par
+  border-left: 4px solid #555;\par
+  padding-left: 12px;\par
+  margin-bottom: 14px;\par
+\}\par
+.entry \{\par
+  background: #1a1a1a;\par
+  border: 1px solid #2f2f2f;\par
+  padding: 16px;\par
+  border-radius: 8px;\par
+\}\par
+.letter \{\par
+  background: #1a1a1a;\par
+  border: 1px solid #2f2f2f;\par
+  padding: 16px;\par
+  border-radius: 8px;\par
+  line-height: 1.6;\par
+\}\par
+.gallery-grid \{\par
+  display: grid;\par
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));\par
+  gap: 12px;\par
+\}\par
+.gallery-grid img \{\par
+  width: 100%;\par
+  height: 180px;\par
+  object-fit: cover;\par
+  border-radius: 6px;\par
+  border: 1px solid #2f2f2f;\par
+  background: #333;\par
+\}\par
+.site-footer \{\par
+  text-align: center;\par
+  padding: 20px;\par
+  color: var(--muted);\par
+  font-size: 0.9rem;\par
+\}\par
+@media (max-width: 600px) \{\par
+  .brand \{ font-size: 2.2rem; \}\par
+\}\par
+Wskaz\'f3wki dotycz\f1\'b9ce wdro\'bfenia na GitHub Pages\par
+Utw\f0\'f3rz nowe repozytorium, nazwij je np. karentonoyan.github.io (dla strony u\f1\'bfytkownika/organizacji) lub nazwij dowolnie i u\'bfyj ga\'b3\'eazi gh-pages/gh-pages dla repozytorium projektowego.\par
+W repozytorium wrzu\'e6 pliki index.html, css/style.css i ewentualnie folder images z Twoimi zdj\'eaciami.\par
+Je\'9cli chcesz mie\'e6 wersj\'ea z niestandardow\'b9 domen\'b9, post\'eapuj zgodnie z instrukcjami GitHub Pages (dodanie CNAME lub konfiguracja DNS).\par
+Aby pliki by\'b3y \f2\'84gotowe do dzia\f1\'b3ania\rdblquote  bez dodatkowego kopiowania: u\'bfyj jednego repozytorium z kompletnym zestawem plik\f0\'f3w (jak powy\f1\'bfej). Mo\'bfesz doda\'e6 wi\'eacej sekcji/tre\'9cci bez modyfikowania struktury.\par
+Dodatkowe uwagi\par
+\par
+W tre\'9cciCV i listu motywacyjnego wstaw w\'b3asne dane (do\'9cwiadczenie, umiej\'eatno\'9cci, edukacja, projekty).\par
+W sekcji zdj\'ea\'e6 dodaj w\'b3asne pliki do images/ i odwo\'b3uj si\'ea do nich w HTML (lub mo\'bfesz wykorzysta\'e6 zewn\'eatrzne \'9fr\f0\'f3d\f1\'b3a).\par
+Je\'9cli chcesz, mog\'ea wygenerowa\'e6 gotowy plik README.md z instrukcj\'b9 deploy, a tak\'bfe rozszerzony przyk\'b3ad z formularzem kontaktowym lub dodatkow\'b9 galeri\'b9.\par
+Pytania pomocnicze\par
+\par
+Czy chcesz, aby strona by\'b3a dost\'eapna pod niestandardow\'b9 domen\'b9 (np. karentonoyan.pl) \f2\emdash  potrzebujemy domeny i dost\f1\'eapu do DNS?\par
+Ile zdj\'ea\'e6 chcesz mie\'e6 w galerii i czy maj\'b9 by\'e6 linkowane zewn\'eatrznie czy lokalnie?\par
+Czy chcesz, abym doda\'b3 dodatkowe sekcje (np. referencje, portfolio projekt\f0\'f3w, kontakt)?\par
+Je\f1\'9cli chcesz, mog\'ea od razu wygenerowa\'e6 zdefiniowane pliki do skopiowania/rysunku i poda\'e6 gotowy zestaw do wkroczenia na GitHub Pages.\par
+\par
+Id\'9f dalej\f2\emdash\emdash dog\f1\'b3\'eabna analiza z Deep Research\par
+My\'9cl (R1)\par
+Szukaj\par
+29\par
+Aktualizacja\par
+avatar\f0\lang21\par
+}
+ 
