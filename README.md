@@ -8,6 +8,6 @@ psychologia pomoc ludz
     <h1>404 - Strona nie znaleziona</h1>
     <p>Przepraszamy, ale ta strona nie istnieje.</p>
     <a href="/">Powrót na stronę główną</a>
-  </body>
+  </body>Karen Tonoyan
 </html>
 juz nie bawem  nowe ksiazki dla duszy i głowy 
