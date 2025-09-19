@@ -10,3 +10,4 @@ psychologia pomoc ludz
     <a href="/">Powrót na stronę główną</a>
   </body>
 </html>
+juz nie bawem  nowe ksiazki dla duszy i głowy 
